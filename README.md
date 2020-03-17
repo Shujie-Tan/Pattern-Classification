@@ -12,3 +12,5 @@ Contents:
 * Lab 8, EM Algorithm and Mixture of Densities (Gaussians) for Image Segmentation
 * Lab 10, k Nearest Neighbor and Parzen Window
 * Lab 11, k Nearest Neighbor and Parzen Window
+
+where Lab 2, 3 are written by matlab and others are written by jupyter notebook.
