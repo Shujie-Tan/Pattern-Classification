@@ -1,0 +1,17 @@
+syms x;
+f1 = 2/3 * 1 / (sqrt(2*pi)*0.5) * exp(- (x - 2)^2 *0.5 / 0.5^2);
+f2 = 1/3 * 1 / (sqrt(2*pi)*0.2) * exp(- (x - 1.5)^2 *0.5 / 0.2^2);
+eqn = f1 == f2;
+solx = solve(eqn, x);
+xvalues = vpa(solx);
+fplot(f1);
+hold on;
+grid on;
+fplot(f2);
+% legend("f1","f2","AutoUpdate","off");
+yvalues = subs(f1,x,xvalues);
+gscatter(vpa(solx), yvalues, ["optimal decision bound 1","optimal decision bound 2"]);
+disp(xvalues);
+disp(solx);
+legend("f1","f2","optimal decision bound 1","optimal decision bound 2");
+hold off;
